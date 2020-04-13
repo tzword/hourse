@@ -1,4 +1,4 @@
-package com.tzword.house.web;
+package com.tzword.house;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
