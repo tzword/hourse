@@ -1,10 +1,10 @@
-package com.tzword.hourse;
+package com.tzword.house;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HourseApplicationTests {
+class HouseApplicationTests {
 
     @Test
     void contextLoads() {
