@@ -1,6 +1,7 @@
 package com.tzword.house.web.intercepor;
 
 import com.tzword.house.common.model.User;
+import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpSession;
  * @Description: 用户拦截器
  * @date 2020/8/4 14:52
  */
+@Component
 public class AuthInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
