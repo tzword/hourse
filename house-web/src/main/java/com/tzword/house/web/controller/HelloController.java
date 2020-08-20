@@ -6,16 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 @RequestMapping("/hello")
 public class HelloController {
     @Autowired
     private MailService mailService;
 
     @RequestMapping("/sendEmail")
-    public void sendMail(){
-        mailService.sendMail("工作周报20200803","尊敬的领导，附件为本周的工作周报，请查收","328058739@qq.com","328058739@qq.com");
+    public String sendMail(){
+        mailService.sendMail("工作周报20200818","尊敬的领导，附件为本周的工作周报，请查收","328058739@qq.com","328058739@qq.com");
+        return "发送成功";
     }
 
     @RequestMapping("/hello1")

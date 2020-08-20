@@ -28,7 +28,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 						"/sys-verify-code/getCode",
 						"/sys-verify-code/getVerify/*",
 						"/swagger-resources/**",
-						"/webjars/**",
+						"/hello/sendEmail",
 						"/v2/**",
 						"/uploadFilePath/**",
 						"/swagger-ui.html/**",
