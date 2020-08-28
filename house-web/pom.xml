@@ -92,7 +92,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-    </dependencies>uploadFilePath
+    </dependencies>
 
     <build>
         <plugins>
